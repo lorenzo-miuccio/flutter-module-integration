@@ -20,8 +20,8 @@ class AddFlutterApplication : Application() {
         flutterEngine.dartExecutor.executeDartEntrypoint(
             DartExecutor.DartEntrypoint(
                 FlutterInjector.instance().flutterLoader().findAppBundlePath(),
-                "package:flutter_module/main_prod.dart",
-                "mainProd"
+                "package:flutter_module/main_${BuildConfig.FLAVOR}.dart",
+                "main"
             )
         )
 

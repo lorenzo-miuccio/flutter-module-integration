@@ -23,6 +23,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         profile {
+            buildConfigField "String", "SERVER_BASE_URL", "\"https://dev.server.com/\""
             initWith debug
         }
     }
