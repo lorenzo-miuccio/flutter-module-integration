@@ -1,6 +1,7 @@
 package com.example.myandroidapplication
 
 import android.app.Application
+import io.flutter.FlutterInjector
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.FlutterEngineCache
 import io.flutter.embedding.engine.dart.DartExecutor
@@ -11,12 +12,17 @@ class AddFlutterApplication : Application() {
     companion object {
         const val FLUTTER_ENGINE_NAME = "flutter_engine"
     }
+
     override fun onCreate() {
         super.onCreate()
         flutterEngine = FlutterEngine(this)
 
         flutterEngine.dartExecutor.executeDartEntrypoint(
-            DartExecutor.DartEntrypoint("f", "main_dev.dart")
+            DartExecutor.DartEntrypoint(
+                FlutterInjector.instance().flutterLoader().findAppBundlePath(),
+                "package:flutter_module/main_prod.dart",
+                "mainProd"
+            )
         )
 
         FlutterEngineCache

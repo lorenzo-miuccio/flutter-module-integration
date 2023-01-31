@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_module/config/env.dart';
 import 'package:flutter_module/app.dart';
+import 'package:flutter_module/config/env.dart';
 
-void main() => runApp(MyApp(Env.prod()));
+@pragma('vm:entry-point')
+void mainProd() => runApp(MyApp(Env.prod()));
