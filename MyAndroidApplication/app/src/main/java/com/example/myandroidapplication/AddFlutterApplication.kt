@@ -16,7 +16,7 @@ class AddFlutterApplication : Application() {
         flutterEngine = FlutterEngine(this)
 
         flutterEngine.dartExecutor.executeDartEntrypoint(
-            DartExecutor.DartEntrypoint.createDefault()
+            DartExecutor.DartEntrypoint("f", "main_dev.dart")
         )
 
         FlutterEngineCache
