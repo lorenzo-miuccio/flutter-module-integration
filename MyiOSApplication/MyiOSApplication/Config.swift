@@ -5,9 +5,11 @@
 //  Created by Lorenzo Miuccio on 01/02/23.
 //
 
+import Foundation
+
 enum Environment: String { // 1
-    case prod = "Debug-prod"
-    case dev = "Debug-dev"
+    case prod = "prod"
+    case dev = "dev"
 }
 
 class BuildConfiguration { // 2
@@ -16,8 +18,7 @@ class BuildConfiguration { // 2
     var environment: Environment
     
     init() {
-        let currentConfiguration = Bundle.main.object(forInfoDictionaryKey: "Environment") as! String
-        
+        let currentConfiguration = Bundle.main.object(forInfoDictionaryKey: "Env") as! String
         environment = Environment(rawValue: currentConfiguration)!
     }
 }
