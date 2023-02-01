@@ -28,7 +28,7 @@
 		9769ED37AA30CB59BBBDD436 /* Pods-MyiOSApplication.profile-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyiOSApplication.profile-dev.xcconfig"; path = "Target Support Files/Pods-MyiOSApplication/Pods-MyiOSApplication.profile-dev.xcconfig"; sourceTree = "<group>"; };
 		A9AC034531894393AC7A249A /* Pods_MyiOSApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyiOSApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0656928F681C654BCEEDC87 /* Pods-MyiOSApplication.profile-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyiOSApplication.profile-prod.xcconfig"; path = "Target Support Files/Pods-MyiOSApplication/Pods-MyiOSApplication.profile-prod.xcconfig"; sourceTree = "<group>"; };
-		EDA272CD298A789F0004AFCE /* MyiOSApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyiOSApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA272CD298A789F0004AFCE /* MyiOSApplication Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyiOSApplication Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA272D0298A789F0004AFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA272D2298A789F0004AFCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EDA272D4298A789F0004AFCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		EDA272CE298A789F0004AFCE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EDA272CD298A789F0004AFCE /* MyiOSApplication.app */,
+				EDA272CD298A789F0004AFCE /* MyiOSApplication Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +128,7 @@
 			);
 			name = MyiOSApplication;
 			productName = MyiOSApplication;
-			productReference = EDA272CD298A789F0004AFCE /* MyiOSApplication.app */;
+			productReference = EDA272CD298A789F0004AFCE /* MyiOSApplication Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -336,7 +336,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.myiOSApplication.MyiOSApplication.dev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME) Dev";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,7 +484,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.myiOSApplication.MyiOSApplication.dev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME) Dev";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -516,7 +516,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.myiOSApplication.MyiOSApplication.dev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME) Dev";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
