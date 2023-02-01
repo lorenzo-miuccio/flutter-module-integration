@@ -7,18 +7,18 @@
 
 import Foundation
 
-enum Environment: String { // 1
+enum Env: String {
     case prod = "prod"
     case dev = "dev"
 }
 
-class BuildConfiguration { // 2
+class BuildConfiguration {
     static let shared = BuildConfiguration()
     
-    var environment: Environment
+    let environment: Env
     
-    init() {
+    private init() {
         let currentConfiguration = Bundle.main.object(forInfoDictionaryKey: "Env") as! String
-        environment = Environment(rawValue: currentConfiguration)!
+        environment = Env(rawValue: currentConfiguration)!
     }
 }
