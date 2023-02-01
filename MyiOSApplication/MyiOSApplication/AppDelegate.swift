@@ -11,6 +11,7 @@ import FlutterPluginRegistrant
 @main
 class AppDelegate: FlutterAppDelegate {
 
+    print(BuildConfiguration.shared.environment)
     lazy var flutterEngine = FlutterEngine(name: "my flutter engine")
 
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
