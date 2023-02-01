@@ -20,6 +20,4 @@ class AppDelegate: FlutterAppDelegate {
         GeneratedPluginRegistrant.register(with: self.flutterEngine);
         return super.application(application, didFinishLaunchingWithOptions: launchOptions);
     }
-    
 }
-
